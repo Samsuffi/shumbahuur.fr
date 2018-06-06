@@ -23,7 +23,7 @@ if(!isset($contenu)) $contenu = "accueil.php";
 	<!-- Normalize -->
 	<link rel="stylesheet" href="<?= ROOTPATH ?>/css/normalize.css" media="screen" type="text/css" title="Défaut">
 	<!-- Stylesheet -->
-	<link rel="stylesheet" href="<?= ROOTPATH ?>/css/style2.css" media="screen" type="text/css" title="Défaut">
+	<link rel="stylesheet" href="<?= ROOTPATH ?>/css/style.css" media="screen" type="text/css" title="Défaut">
 </head>
 
 <?php if(DEBUG === true){

@@ -31,7 +31,7 @@ if($requete = $bdd->query($query)){
 			<article class='news<?= intval($data['id']%2); ?>'>
 				<p class='date_news'>le <?= strip_tags($data['datetime']); ?> : </p>
 				<h5><?= strip_tags($data['titre']); ?></h5>
-				<p><?= nl2br(strip_tags($data['contenu'])); ?></p>
+				<p><?= nl2br(htmlspecialchars($data['contenu'])); ?></p>
 			</article>
 		<?php }
 	} else { ?>

@@ -124,6 +124,14 @@ hr{
 	margin: 3rem auto 3rem;
 	width: 50%;
 }
+
+#corps {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	text-align: center;
+	
+}
 /****** FOOTER *******/
 footer{
 	margin-top: 5%;

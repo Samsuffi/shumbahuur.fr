@@ -68,7 +68,7 @@ if(isset($_POST['pseudo']) and isset($_POST['mot_de_passe'])){
 		} else {
 			$page_destination = '../index';
 		}//*/
-		//header('Location: '.  HOME);
+		header('Location: '.  HOME);
 	}
 }
 ?>

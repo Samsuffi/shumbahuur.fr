@@ -9,9 +9,9 @@ Le menu général du site
 ?>
 <?php if($contenu == "accueil.php"): ?>
 <ul>
+	<li><a href='<?= HOME . "biscotte" ?>'>Annonceur Roulette</a></li>
+	<li><a href="<?= HOME ?>CF" target="_blank">Christine Feurer</a></li>
 	<li><a href='<?= HOME . "donjon" ?>'>Dungeon Raider</a></li>
-	<li><a href='<?= HOME . "biscotte" ?>'>Annonceur roulette</a></li>
-	<li><a href="<?= HOME ?>CF" target="_blank">Christine</a></li>
 	<li><a href="<?= HOME ?>liens_utiles">Liens Utiles</a></li>
 </ul>
 <?php else: ?>

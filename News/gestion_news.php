@@ -18,11 +18,11 @@ $reponse = $bdd->query("SELECT *, DATE_FORMAT(timestamp, '%d/%m/%Y à %Hh%i') as
 		while($donnees = $reponse->fetch()){ ?>
 				<tr><td class='news<?= $donnees['id']%2 ; ?>'>
 					<h6 class='date_news'>le <?= $donnees['datetime']; ?> : </h6>
-					<?php echo '<h5 class=\'titre_news\'>'.$donnees['titre'] .'</h5>';
+					<?php echo '<h5 class=\'titre_news\'>'.htmlentities($donnees['titre']) .'</h5>';
 		
 					// On protège PUIS on crée les entrées en HTML (<br />)
-					$contenu = nl2br($donnees['contenu']);
-					echo $contenu;
+					$contenu = nl2br(htmlentities($donnees['contenu']));
+					echo "<p>$contenu</p>";
 					?>
 				</td>
 				<?php 

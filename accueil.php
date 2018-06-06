@@ -8,12 +8,6 @@ Page d'accueil du site
 ?>
 
 <hr>
-
-<section id='message_accueil'>
-	<h1>Bienvenue sur mon site perso !</h1>
-</section>
-	
-<hr>
 	
 <section>
 	<h2>Mes projets</h2>

@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+body{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: 'BioRhyme Expanded', serif;
+	font-family: 'Kumar One Outline', cursive;
+
+
+	color: #0f5900;
+
+	background-image: url("Images/fond.png");
+}
+
+a{
+color: #6b0176;
+text-decoration: none;
+}
+
+a:hover{
+color: green;
+}
+
+/* Mise en forme du texte */
+.italic{font-style: italic;}
+.petit{font-size: 75%;}
+
+/* Boites entourant les différentes parties */
+.box{
+background-color: #ffffff;
+/* Le code magique pour tous les navigateurs SAUF Internet Explorer */
+-moz-border-radius: 1em; 
+-webkit-border-radius: 1em;
+/* On définit ici l’epaisseur, l’aspect et la couleur de notre bordure */
+border: 2px solid #80a6af;
+/* du padding pour écarter notre texte des bords de notre div */
+padding: 10px;
+}
+
+/* Partie Bannière */
+#banniere{
+font-size: 300%;
+text-align: center;
+margin-bottom: 15px;
+}
+
+#txt_bienvenue{
+font-size: 20%;
+}
+
+/* Partie Menu */
+#menu{
+text-align:center;
+}
+
+#sous-menu{
+text-align:center;
+margin-top: 0em;
+padding : 0.2em;
+}
+
+#menu ul, #menu li, #sous-menu ul, #sous-menu li{
+list-style-type : none;
+display : inline;
+padding : 0 2.5%;
+}
+
+/* Partie Corps */
+#message_accueil{
+float: left;
+width: 53%;
+margin-top: 1em;
+margin-bottom: 1em;
+min-height: 500px;
+}
+
+#affiche_news{
+float: right;
+width: 33%;
+margin-top: 1em;
+margin-bottom: 1em;
+text-align: center;
+}
+
+#big_titre_news{
+margin-top: 0.3em;
+margin-bottom: 0.3em;
+}
+
+.date_news{
+margin-top: 0.3em;
+margin-bottom: 0.3em;
+font-weight: normal;
+font-style: italic;
+}
+.titre_news{
+margin-top: 0.3em;
+margin-bottom: 0.3em;
+}
+
+.news0{
+background-color: #80a6af;
+padding : 5px 2.5%;
+}
+.news1{
+background-color: #86dea9;
+padding: 5px 2.5%;
+}
+
+#corps{
+margin-top: 15px;
+margin-bottom: 15px;
+min-height: 500px;
+}
+
+#vue_carte{
+width:69%;
+float:left;
+}
+
+#bord_droit{
+margin-left: 70%;
+width:30%;
+}
+
+#pied_de_carte{
+clear: both ;
+}
+
+
+#btn_lance, #btn_annonce,
+#btn_play1, #btn_play2, #btn_play3, #btn_play4{
+width:150px;
+height:50px;
+}
+
+#btn_jouer{
+text-align: center;
+width:150px;
+height:50px;
+}
+
+#edit_resultat{
+font-size:200%;
+}
+
+/* Partie Footer */
+#footer{
+clear: both;
+text-align: right;
+font-size: 75%;
+margin-top: 1em;
+}
+
+/* Carte */
+
+#navigation, #legende{
+	display:inline-block;
+	vertical-align:top;
+	margin:5%;
+}
+#navigation{
+	
+	width:50%;
+}
+#vue{
+	/*
+	margin-left:auto;
+	margin-right:auto;
+	*/
+}
+#legende{
+	/*margin-left:5%;*/
+	
+
+}
+
+/*
+#carte{
+	position:relative;
+}
+#navigation, #legende{
+	border:1px solid maroon;
+	display: inline-block;
+	vertical-align:top;
+}
+#vue{
+	margin-left: auto;
+	margin-right:auto;
+}
+#legende{
+	position:relative;
+	right:200px;
+}
+*/
+/*
+#f_haut{
+	position:absolute;
+	top:10px;
+	left:300px;
+}
+#f_bas{
+	position:absolute;
+	top:610px;
+	left:300px;
+}
+#f_gauche{
+	position:absolute;
+	top:300px;
+	left:10px;
+}
+#f_droite{
+	position:absolute;
+	top:300px;
+	left:610px;
+}
+*/
+
+/* Gestion de lieux */
+/* Modification des lieux */
+
+
+

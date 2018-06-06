@@ -1,0 +1,45 @@
+@charset "utf-8";
+html{
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 2em;
+	font-family: 'Arial', sans-serif;
+	color: black;
+	width: 90%;
+	margin: auto;
+}
+header{
+	text-align: center;
+	font-weight: bold;
+}
+header :nth-child(1){font-size: 4rem;}
+header :nth-child(2){font-size: 6rem;}
+header :nth-child(3){font-size: 5rem;}
+header :nth-child(4){font-size: 3rem;}
+
+.hr{
+	display: flex;
+	flex-flow: row nowrap;
+}
+.hr hr{
+	width: 96%;
+	height: 0;
+	line-height: 0;
+	border: .9px dashed black;
+}
+
+
+strong{font-weight: normal;}
+em{font-style: normal;}
+.gras{font-weight: bold;}
+.italique{font-style: italic;}
+.souligne{text-decoration: underline;}
+
+#bandeau{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+}

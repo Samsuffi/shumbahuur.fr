@@ -1,0 +1,4 @@
+TODOList :
+
+mot de passe => trouver une alternative à sha1 (et pourquoi ?)
+gestion_news.php => protéger les POST titre et contenus

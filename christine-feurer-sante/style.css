@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* Résolution min : 250px */
+/* Override */
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	font-family: Trebuchet, Arial, sans-serfi;
+	width: 90%;
+	margin: 2rem auto;
+
+	background-color: #fefefe;
+	background-image: url("img/paysage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	color: #800000;
+	text-shadow: 0 0 1px #fefefe;
+}
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: none;
+}
+
+/* Global */
+section{
+	padding: 2rem 2rem;
+	margin: 2rem auto;
+}
+section, iframe, nav {
+	border-radius: 25px;
+	box-shadow: 0 0 10px #333;
+	background-color: rgba(250, 250, 210, .5);
+}
+section ul strong{
+	font-weight: bold;
+}
+section > h2 {
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+/* Header */
+/* nav */
+nav{
+	text-align: center;
+}
+nav ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+nav > ul li{
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+/* Main */
+main ul strong{
+	font-weight: bold;
+}
+main a h1{
+	font-weight: bold;
+	text-transform: capitalize;
+}
+main p span{
+	font-style: italic;
+}
+#contact, #presentation{
+	text-align: center;
+}
+
+#presentation h2 {
+	margin: 2rem 0.5rem auto;
+}
+#presentation h2 + p{
+	margin-top: 0.5rem;
+} #presentation h2, #presentation h2+p{
+	color: rgb(0, 0, 238);
+}
+
+/* Media Query */
+/* Très petit écran */
+@media(min-width:280px) {
+
+}
+/* Pre-tablette */
+@media(min-width:400px) {
+	
+	/* clearfix */
+	#outils article{
+			overflow: auto;
+	}
+	#outils article h3 {
+			margin: 2rem auto;
+	}
+	#outils img {
+			display: inline-block;
+			float: left;
+			width: auto;
+			height: 10rem;
+			margin: 2rem 2rem 2rem 0;
+			border-radius: 100%;
+	}
+	/* on fait flotter la seconde image à droite */
+	#outils article:nth-of-type(2) img{
+			float: right;
+			margin: 2rem 0 2rem 2rem;
+	}
+	/* Et on rapoche le titre */
+	#outils article:nth-of-type(2) h3{
+			text-align: right;
+	}
+}
+/* Mise en forme du contact */
+@media(min-width:550px){
+	/* la ligne dans un ul 2e enfant */
+	#contact ul:nth-child(2) li{
+			display: inline-block;
+			margin: auto 2rem;
+	}
+	/* Les lignes 2&3 dans le ul 3e enfant */
+	#contact ul:nth-child(3) li:nth-child(2),
+	#contact ul:nth-child(3) li:nth-child(3){
+			display: inline-block;
+			margin: auto 2rem;
+	}
+	/* Les spans et strong des ligne 2&3 */
+	#contact ul:nth-child(3) li:nth-child(2) strong,
+	#contact ul:nth-child(3) li:nth-child(2) span,
+	#contact ul:nth-child(3) li:nth-child(3) strong,
+	#contact ul:nth-child(3) li:nth-child(3) span{
+			padding: 0;
+	}
+}
+/* Tablette */
+@media(min-width:768px){
+    #outils img {
+        width: auto;
+        height: 20rem;
+        border-radius: 25px;
+    }
+
+    /* tarifs en ligne */
+    #tarifs > div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+}
